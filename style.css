@@ -1,0 +1,23 @@
+.html {
+	font-size: 62.5%;
+	}
+
+body{
+	background-color: black;
+	color: lightgrey;
+	font-size: 3rem
+}
+.slogan {
+	margin: 50px 0 50px 0;
+	border-color: white;
+	text-align: center;
+	font-size: 4.8rem;
+}
+.gallows {
+	text-align: center;
+	min-height: 280px;
+}
+.alphabet {
+	text-align: center;
+	min-height: 280px;
+}
