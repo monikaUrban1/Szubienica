@@ -5,7 +5,7 @@
 body{
 	background-color: black;
 	color: lightgrey;
-	font-size: 3rem
+	font-size: 2rem;
 }
 .slogan {
 	margin: 50px 0 50px 0;
@@ -20,4 +20,15 @@ body{
 .alphabet {
 	text-align: center;
 	min-height: 280px;
+}
+.litera {
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	padding: 5px;
+	margin: 5px;
+	border: 3px solid gray;
+	float: left;
+	cursor: pointer;
+	border-radius: 5px;
 }

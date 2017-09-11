@@ -12,8 +12,17 @@ for (i = 0; i <dlugosc; i++) {
 }
 window.onload = start;
 
+var litery = new Array(35);
+
+
 function start(){
-	document.getElementById("alphabet").innerHTML = "lolwut"
+	var tresc_diva = "";
+	for (i=0; i<=34; i++) {
+		tresc_diva=tresc_diva+'<div class="litera">a</div>';
+		if ((i+1)%7==0) tresc_diva=tresc_diva+'<div style="clear:both;"</div>'
+	}
+		document.getElementById("alphabet").innerHTML = tresc_diva;
+	
 
 	wypisz_haslo();
 }
