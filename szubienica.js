@@ -120,7 +120,7 @@ function sprawdz(nr) {
 	
 	if (haslo == haslo1) 
 	{
-		document.getElementById("alfabet").innerHTML = "Brawo! Podano prawidłowe hasło:"+haslo+'<br/><br/><span class="reset" onclick="location.reload()">JESZCZE RAZ?</span>'
+		document.getElementById("alfabet").innerHTML = "Brawo! Podano prawidłowe hasło: "+haslo+'<br/><br/><span class="reset" onclick="location.reload()">JESZCZE RAZ?</span>'
 	}
 	if (ile_skuch>=9) {
 		document.getElementById("alfabet").innerHTML = "Przegrana... prawidłowe hasło:"+haslo+'<br/><br/><span class="reset" onclick="location.reload()">JESZCZE RAZ?</span>'

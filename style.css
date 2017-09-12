@@ -6,6 +6,8 @@ body{
 	background-color: black;
 	color: lightgrey;
 	font-size: 26px;
+	font-family: "Inconsolata";
+	font-weight: 700;
 }
 #plansza {
 	margin: 50px 0 50px 0;
