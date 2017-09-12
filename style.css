@@ -1,7 +1,9 @@
 .html {
 	font-size: 62.5%;
 	}
-
+body {
+	background-color: #000000;
+}
 .box{
 	background-color: black;
 	color: lightgrey;
