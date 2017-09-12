@@ -2,7 +2,9 @@ var haslo = "Bez pracy nie ma kołaczy";
 haslo=haslo.toUpperCase();
 var dlugosc = haslo.length;
 var haslo1 = "";
-
+var ile_skuch = 0;
+var yes = new Audio("yes.wav");
+var no = new Audio("no.wav");
 for (i=0; i<dlugosc; i++)
 {
 	if (haslo.charAt(i)==" ") haslo1 = haslo1 + " ";
@@ -93,7 +95,7 @@ function sprawdz(nr) {
 
 	if(trafiona == true)
 	{
-
+		yes.play();
 		var element = "lit" + nr;
 		document.getElementById(element).style.background = "#003300";
 		document.getElementById(element).style.color = "#00C000";
@@ -104,11 +106,23 @@ function sprawdz(nr) {
 	}
 	else
 	 {
+	 	no.play();
 	 	var element = "lit" + nr;
 		document.getElementById(element).style.background = "#330000";
 		document.getElementById(element).style.color = "#C00000";
 		document.getElementById(element).style.border = "3px solid #C00000";
 		document.getElementById(element).style.cursor = "default";
+		document.getElementById(element).setAttribute("onclick", ";");
+		ile_skuch++;
+		var obraz = "img/s" + ile_skuch + ".jpg"
+		document.getElementById("szubienica").innerHTML= '<img src="'+obraz+'"alt=""/>';
 	}
 	
+	if (haslo == haslo1) 
+	{
+		document.getElementById("alfabet").innerHTML = "Brawo! Podano prawidłowe hasło:"+haslo+'<br/><br/><span class="reset" onclick="location.reload()">JESZCZE RAZ?</span>'
+	}
+	if (ile_skuch>=9) {
+		document.getElementById("alfabet").innerHTML = "Przegrana... prawidłowe hasło:"+haslo+'<br/><br/><span class="reset" onclick="location.reload()">JESZCZE RAZ?</span>'
+	}
 }
