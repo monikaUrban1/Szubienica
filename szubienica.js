@@ -1,14 +1,17 @@
-var haslo = "Dobrej nocy";
-var haslo1 = "";
+var haslo = "Bez pracy nie ma kołaczy";
+haslo=haslo.toUpperCase();
 var dlugosc = haslo.length;
+var haslo1 = "";
 
-for (i = 0; i <dlugosc; i++) {
+for (i=0; i<dlugosc; i++)
+{
 	if (haslo.charAt(i)==" ") haslo1 = haslo1 + " ";
 	else haslo1 = haslo1 + "-";
-	}
+}
 
-	function wypisz_haslo() {
-	document.getElementById('slogan').innerHTML = haslo1;
+function wypisz_haslo()
+{
+	document.getElementById("plansza").innerHTML = haslo1;
 }
 window.onload = start;
 
@@ -50,14 +53,62 @@ litery[32]="Z";
 litery[33]="Ź";
 litery[34]="Ż";
 
-function start(){
-	var tresc_diva = "";
-	for (i=0; i<=34; i++) {
-		tresc_diva=tresc_diva+'<div class="litera">'+litery[i]+'</div>';
-		if ((i+1)%7==0) tresc_diva=tresc_diva+'<div style="clear:both;"</div>'
+function start()
+{
+	
+	var tresc_diva ="";
+	
+	for (i=0; i<=34; i++)
+	{
+		var element = "lit" + i;
+		tresc_diva = tresc_diva + '<div class="litera" onclick="sprawdz('+i+')" id="'+element+'">'+litery[i]+'</div>';
+		if ((i+1) % 7 ==0) tresc_diva = tresc_diva + '<div style="clear:both;"></div>';
 	}
-		document.getElementById("alphabet").innerHTML = tresc_diva;
+	
+	document.getElementById("alfabet").innerHTML = tresc_diva;
+	
+	
+	wypisz_haslo();
+}
+
+String.prototype.ustawZnak = function(miejsce, znak)
+{
+	if (miejsce > this.length - 1) return this.toString();
+	else return this.substr(0, miejsce) + znak + this.substr(miejsce+1);
+}
+
+function sprawdz(nr) {
+	
+	var trafiona = false;
+
+	for(i=0; i<dlugosc; i++)
+	{
+		if (haslo.charAt(i) == litery[nr]) 
+		{
+			haslo1 = haslo1.ustawZnak(i,litery[nr]);
+			trafiona = true;
+		}
+	}
 	
 
-	wypisz_haslo();
+	if(trafiona == true)
+	{
+
+		var element = "lit" + nr;
+		document.getElementById(element).style.background = "#003300";
+		document.getElementById(element).style.color = "#00C000";
+		document.getElementById(element).style.border = "3px solid #00C000";
+		document.getElementById(element).style.cursor = "default";
+		
+		wypisz_haslo();
+	}
+	else
+	 {
+	 	var element = "lit" + nr;
+		document.getElementById(element).style.background = "#330000";
+		document.getElementById(element).style.color = "#C00000";
+		document.getElementById(element).style.border = "3px solid #C00000";
+		document.getElementById(element).style.cursor = "default";
+	}
+	
 }

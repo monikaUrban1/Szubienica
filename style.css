@@ -7,17 +7,17 @@ body{
 	color: lightgrey;
 	font-size: 26px;
 }
-.slogan {
+#plansza {
 	margin: 50px 0 50px 0;
 	border-color: white;
 	text-align: center;
 	font-size: 4.8rem;
 }
-.gallows {
+#szubienica {
 	text-align: center;
 	min-height: 280px;
 }
-.alphabet {
+#alfabet {
 	text-align: center;
 	min-height: 280px;
 }
