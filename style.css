@@ -2,7 +2,7 @@
 	font-size: 62.5%;
 	}
 
-body{
+.box{
 	background-color: black;
 	color: lightgrey;
 	font-size: 26px;
@@ -46,4 +46,33 @@ body{
 }
 .reset:hover {
 	color: white;
+}
+
+@media screen(max-width: 380px) {
+	.litera {
+	width: 20px;
+	min-height: 20px;
+	text-align: center;
+	padding: 5px;
+	margin: 5px;
+	border: 3px solid gray;
+	float: left;
+	cursor: pointer;
+	border-radius: 5px;
+}
+	#plansza {
+	margin: 50px 0 50px 0;
+	border-color: white;
+	text-align: center;
+	font-size: 4.8rem;
+	width: 100%;
+}
+.box{
+	background-color: black;
+	color: lightgrey;
+	font-size: 26px;
+	font-family: "Inconsolata";
+	font-weight: 700;
+	width: 100%;
+}
 }
