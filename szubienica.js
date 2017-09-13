@@ -1,4 +1,116 @@
-var haslo = "Uśmiechnij sie";
+//tablica z hasłami
+var hasla = new Array(100);
+hasla[0] = "Baba z wozu, koniom lżej";
+hasla[1] = "Biednemu zawsze wiatr w oczy";
+hasla[2] = "Co cię nie zabije, to cię wzmocni";
+hasla[3] = "Co dwie głowy, to nie jedna";
+hasla[4] = "Co ma wisieć, nie utonie";
+hasla[5] = "Dla chcącego nic trudnego";
+hasla[6] = "Dlatego dwie uszy, jeden język dano, iżby mniej mówiono, a więcej słuchano";
+hasla[7] = "Elektryka prąd nie tyka";
+hasla[8] = "Gdy kota nie ma, myszy harcują";
+hasla[9] = "Gdzie drwa rąbią, tam wióry lecą";
+hasla[10] = "Gdzie dwóch się bije, tam trzeci korzysta";
+hasla[11] = "Gdzie kucharek sześć, tam nie ma co jeść";
+hasla[12] = "Głodnemu chleb na myśli";
+hasla[13] = "Głupich nie sieją, sami się rodzą";
+hasla[14] = "Jak sobie pościelesz, tak się wyśpisz";
+hasla[15] = "Jedna jaskółka wiosny nie czyni";
+hasla[16] = "Jeśli wejdziesz między wrony, musisz krakać jak i one";
+hasla[17] = "Jeszcze się taki nie urodził, co by wszystkim dogodził";
+hasla[18] = "Kombinuje jak koń pod górę";
+hasla[19] = "Krowa, która dużo ryczy, mało mleka daje";
+hasla[20] = "Kruk krukowi oka nie wykole";
+hasla[21] = "Kto pod kim dołki kopie, ten sam w nie wpada";
+hasla[22] = "Kto pyta, nie błądzi";
+hasla[23] = "Kuć żelazo, póki gorące";
+hasla[24] = "Kłamstwo ma krótkie nogi";
+hasla[25] = "Lepiej dmuchać na zimne niż się gorącym sparzyć";
+hasla[26] = "Lepiej późno niż wcale";
+hasla[27] = "Lepiej z mądrym zgubić niż z głupim znaleźć";
+hasla[28] = "Lepiej ze swoimi płakać niż z obcymi skakać";
+hasla[29] = "Lepszy wróbel w garści niż gołąb na dachu";
+hasla[30] = "Mowa jest srebrem, a milczenie złotem";
+hasla[31] = "Nadzieja matką głupich";
+hasla[32] = "Nadzieja umiera ostatnia";
+hasla[33] = "Nie bądź w gorącej wodzie kąpany";
+hasla[34] = "Nie chwal dnia przed zachodem słońca";
+hasla[35] = "Nie czyń drugiemu, co tobie niemiłe";
+hasla[36] = "Nie od razu Kraków zbudowano";
+hasla[37] = "Nie szata zdobi człowieka";
+hasla[38] = "Nie wszystko złoto, co się świeci";
+hasla[39] = "Nie wywołuj wilka z lasu";
+hasla[40] = "Niedaleko pada jabłko od jabłoni";
+hasla[41] = "Nosił wilk razy kilka, ponieśli i wilka";
+hasla[42] = "Od przybytku głowa nie boli";
+hasla[43] = "Po burzy zawsze słońce przychodzi";
+hasla[44] = "Potrzeba jest matką wynalazków";
+hasla[45] = "Prawdziwych przyjaciół poznaje się w biedzie";
+hasla[46] = "Raz na wozie, raz pod wozem";
+hasla[47] = "Stara miłość nie rdzewieje";
+hasla[48] = "Strach ma wielkie oczy";
+hasla[49] = "Szewc bez butów chodzi";
+hasla[50] = "Ten się śmieje, kto się śmieje ostatni";
+hasla[51] = "Trafiła kosa na kamień";
+hasla[52] = "Trafiło się ślepej kurze ziarno";
+hasla[53] = "Umarł król, niech żyje król";
+hasla[54] = "Wilk syty i owca cała";
+hasla[55] = "Wszędzie dobrze, ale w domu najlepiej";
+hasla[56] = "Wszystko dobre co się dobrze kończy";
+hasla[57] = "Wymieniał stryjek siekierkę za kijek";
+hasla[58] = "Wyszło szydło z worka";
+hasla[59] = "Z dużej chmury mały deszcz";
+hasla[60] = "Żadna praca nie hańbi";
+hasla[61] = "Zapomniał wół, kiedy cielęciem był";
+hasla[62] = "Zgoda buduje, niezgoda rujnuje";
+hasla[63] = "Ziarnko do ziarnka, a zbierze się miarka";
+hasla[64] = "Aniołowie pijanych na rękach swych noszą";
+hasla[65] = "Bierz nogi za pas, póki jeszcze czas";
+hasla[66] = "Byłoby dłuższe lato, gdyby nie zima";
+hasla[67] = "Choćbyś miał złota skrzynie, śmierci się nie wywiniesz";
+hasla[68] = "Ciemnota gorsza od zbrodni";
+hasla[69] = "Co komu pisane, to go nie minie";
+hasla[70] = "Co nie siłą, to rozumem";
+hasla[71] = "Czego nie można zmienić, to trzeba polubić";
+hasla[72] = "Człowiek dla drugich ma rozum, a dla siebie głupi";
+hasla[73] = "Deszcze listopadowe budzą wiatry grudniowe";
+hasla[74] = "Gadać z nim, to jak plewy młócić";
+hasla[75] = "Gdzie głowa rządzi, tam człowiek nie błądzi";
+hasla[76] = "Koniec języka za przewodnika";
+hasla[77] = "Kto nigdy głodu nie czuje, temu i nie smakuje";
+hasla[78] = "Kto po wódce wylewny, u tego sekret niepewny";
+hasla[79] = "Kto sieje wiatr, ten zbiera burze";
+hasla[80] = "Lepiej zrozumieć mało niż zrozumieć źle";
+hasla[81] = "Lepsza byle jaka prawda niż dobre kłamstwo";
+hasla[82] = "Łyżka dziegciu beczkę miodu zepsuje";
+hasla[83] = "Na pochyłe drzewo każda koza wlezie";
+hasla[84] = "Nie wchodzi się dwa razy do tej samej rzeki";
+hasla[85] = "Oliwa sprawiedliwa, zawsze na wierzch wypływa";
+hasla[86] = "Pozory często mylą";
+hasla[87] = "Prawdziwa wiedza to znajomość przyczyn";
+hasla[88] = "Sprawiedliwość bez dobroci okrucieństwem jest";
+hasla[89] = "Starość nie radość, śmierć nie wesele";
+hasla[90] = "Ten się nie myli, kto nic nie robi";
+hasla[91] = "Tylko krowa zdania nie zmienia";
+hasla[92] = "W tym największy jest ambaras, żeby dwoje chciało na raz";
+hasla[93] = "Widać po słowie co u kogo w głowie";
+hasla[94] = "Wszędzie dobrze, gdzie nas nie ma";
+hasla[95] = "Z tej mąki chleba nie będzie";
+hasla[96] = "Zgoda buduje, niezgoda rujnuje";
+hasla[97] = "Ziarnko do ziarnka, aż zbierze się miarka";
+hasla[98] = "Zasady są po to, aby je łamać";
+hasla[99] = "Przepadło jak kamień w wodę";
+
+
+
+
+
+
+var k = Math.floor(Math.random()*100); 
+
+
+var haslo = hasla[k];
+
 haslo=haslo.toUpperCase();
 var dlugosc = haslo.length;
 var haslo1 = "";
