@@ -119,8 +119,10 @@ var yes = new Audio("yes.wav");
 var no = new Audio("no.wav");
 for (i=0; i<dlugosc; i++)
 {
-	if (haslo.charAt(i)==" ") haslo1 = haslo1 + " ";
-	else haslo1 = haslo1 + "-";
+	if (haslo.charAt(i)==" ") {haslo1 = haslo1 + " ";
+	} else if (haslo.charAt(i)==",") { haslo1 = haslo1 + ",";
+	} else { haslo1 = haslo1 + "-";
+}
 }
 
 function wypisz_haslo()
